@@ -83,6 +83,7 @@ create_tidy_ds <- function(){
     names(act_named) <- gsub("Gyro","Gyroscope",names(act_named))
     names(act_named) <- gsub("Mag","Magnitude",names(act_named))
     names(act_named) <- gsub("BodyBody","Body",names(act_named))
+    names(act_named) <- gsub("-","_",names(act_named))
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with 
 #    the average of each variable for each activity and each subject.
